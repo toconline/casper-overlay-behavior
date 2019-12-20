@@ -1,6 +1,6 @@
 {
-  "description": "Singleton overlay behavior",
-  "name": "@casper2020/singleton-overlay-behaviors",
+  "description": "Casper overlay behavior",
+  "name": "@casper2020/casper-overlay-behavior",
   "version": "0.0.0",
   "dependencies": {
     "@polymer/iron-overlay-behavior": "^3.x"
