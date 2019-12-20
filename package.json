@@ -1,7 +1,7 @@
 {
   "description": "Casper overlay behavior",
   "name": "@casper2020/casper-overlay-behavior",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "dependencies": {
     "@polymer/iron-overlay-behavior": "^3.x"
   }
