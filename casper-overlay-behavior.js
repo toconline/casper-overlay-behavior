@@ -11,10 +11,7 @@ export const CasperOverlayBehavior = [...IronOverlayBehavior, {
   __casperOverlayOpenedChanged: async function (opened) {
     if (!opened) return CasperOverlay.removeActiveOverlay(this);
 
-    // Do not import the casper-wizard in the beginning to avoid circular dependencies.
-    this.__wizardModule = this.__wizardModule || await import('/node_modules/@casper2020/casper-wizard/casper-wizard.js');
-
-    if (this instanceof this.__wizardModule.CasperWizard) {
+    if (CasperOverlay.isOverlayAnWizard(this)) {
       CasperOverlay.closeAllActiveNonWizardOverlays();
     }
 
