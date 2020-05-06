@@ -1,7 +1,10 @@
 {
   "description": "Casper overlay behavior",
-  "name": "@casper2020/casper-overlay-behavior",
+  "name": "@cloudware-casper/casper-overlay-behavior",
   "version": "1.0.0",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "dependencies": {
     "@polymer/iron-overlay-behavior": "^3.x"
   }
